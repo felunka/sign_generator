@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %title= yield(:title)
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .a4.flex-wrapper
+      - @data.each do |label|
+        .ethernet-label
+          = image_tag 'polylan_logo.png'
+          .cont
+            = "Floor: #{label['floor']}"
+            = "Block: #{label['block']}"
+            = "Seat: #{label['seat']}"
+            = "Length: #{label['len']}"
