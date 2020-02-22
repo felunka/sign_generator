@@ -5,7 +5,7 @@
 
 // bootstrap
 import 'bootstrap'
-import './src/application.scss'
+import './src/application.sass'
 
 require("@rails/ujs").start()
 require("turbolinks").start()

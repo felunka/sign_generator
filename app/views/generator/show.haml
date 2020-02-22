@@ -2,7 +2,7 @@
   .card-header
     Input
   .card-body
-    = form_tag generate_path, method: 'POST' do
+    = form_tag generate_path, method: 'POST', target: '_blank' do
       .form-group
         = label_tag :output_type, "Output type:"
         = select :job, :output_type, ['direction', 'ethernet_label'], {}, {class: 'form-control'}
@@ -12,4 +12,4 @@
       .form-group
         = label_tag :json_data, "Json data:"
         = text_area :job, :json_data, rows: 15, class: 'form-control'
-      = submit_tag "Generate", class: 'btn btn-primary'
+      = submit_tag "Generate", class: 'btn btn-primary', data: { disable_with: false }
