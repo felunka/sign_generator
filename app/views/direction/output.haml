@@ -27,10 +27,10 @@
               .container
                 - page['elements'].each do |element|
                   .row.mb-3
-                    .col-7.h1.text-right
+                    .col-7.text-right.direction-text
                       = element['text']
                     .col-2
-                    .col-1.direction-icon
+                    .col-1.direction-icon.align-self-center
                       = image_tag "#{element['icon']}.png"
 
 

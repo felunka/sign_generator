@@ -1,3 +1,8 @@
+@font-face 
+    font-family: "bebas_neue"
+    src: font-url('BebasNeue-Regular.otf')
+
+    
 .a4-p
     position: relative
     height: 1680px
@@ -14,6 +19,12 @@
     page-break-after: always
 
 .direction-page
+    .direction-text
+        font-family: "bebas_neue"
+        font-weight: 200
+        font-size: 48pt
+        -webkit-font-smoothing: antialiased
+
     .top-decal
         img
             position: absolute
@@ -37,8 +48,7 @@
 
     .direction-icon
         img
-            width: 32px
-            height: 32px
+            width: 48px
 
 .ethernet-label-wrapper
     display: flex
